@@ -1,12 +1,19 @@
 /* Settings */
 @import url('./settings/fonts.scss');
-@import url('./settings/default.scss');
 @import url('./settings/variables.scss');
+@import url('./settings/default.scss');
 @import url('./settings/general.scss');
-
+@import url('./settings/index.scss');
 
 /* Header */
 @import url('./sections/header/header.scss');
+
+/* Main */
+@import url('./sections/main/hero.scss');
+@import url('./sections/main/behistory.scss');
+@import url('./sections/main/community.scss');
+@import url('./sections/main/utility.scss');
+@import url('./sections/main/cryptvs.scss');
 
 /* Footer */
 @import url('./sections/footer/footer.scss');

@@ -1,0 +1,98 @@
+@media screen and (max-width: 960px) {
+  .fffffff {
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .fffffff {
+  }
+}
+
+.title-def {
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+}
+.dec-subtitle {
+  color: var(--cw);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  &::before {
+    content: "";
+    width: 1.99rem;
+    height: 1.23rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='21' viewBox='0 0 32 21' fill='none'%3E%3Cpath d='M31.843 1.975C31.849 1.586 31.697 1.211 31.425 0.933C31.154 0.656 30.779 0.5 30.39 0.5H23.994C23.813 0.5 23.65 0.609 23.581 0.776C23.514 0.943 23.553 1.135 23.68 1.263L24.913 2.495C25.108 2.689 25.219 2.952 25.219 3.227C25.219 3.501 25.111 3.765 24.914 3.959L18.654 10.216C18.118 10.753 17.249 10.753 16.715 10.216L12.676 6.177C12.437 5.938 12.114 5.804 11.776 5.804C11.438 5.804 11.114 5.938 10.875 6.177L0.372 16.674C-0.124 17.172 -0.124 17.979 0.372 18.477L1.726 19.829C1.965 20.068 2.288 20.201 2.626 20.201C2.964 20.201 3.287 20.068 3.526 19.831L10.803 12.555C11.339 12.02 12.208 12.02 12.743 12.555L16.711 16.524C16.969 16.78 17.316 16.923 17.682 16.923C18.048 16.923 18.397 16.777 18.655 16.524L28.071 7.107C28.264 6.913 28.528 6.804 28.801 6.804C29.075 6.804 29.34 6.913 29.532 7.108L30.985 8.565C31.112 8.692 31.301 8.731 31.469 8.664C31.635 8.597 31.742 8.436 31.748 8.257L31.843 1.975Z' fill='%2300ADEE'/%3E%3C/svg%3E");
+  }
+}
+
+.text-def {
+  font-size: 1.25rem;
+  line-height: normal;
+}
+.text-sec {
+  line-height: normal;
+}
+
+.btn-def {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.0625rem 2.5rem;
+  border-radius: 0.367rem;
+  color: var(--cm);
+  font-size: 1.27rem;
+  font-weight: 700;
+  background-color: var(--cw);
+  line-height: normal;
+  transition: all 200ms ease-in;
+  &:hover,
+  &:focus {
+    background-color: var(--cm);
+    color: var(--cw);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .title-def {
+    font-size: 2rem;
+  }
+  .dec-subtitle {
+    color: var(--cw);
+    font-size: 1rem;
+    font-weight: 600;
+    gap: 0.6rem;
+    align-items: center;
+    &::before {
+      content: "";
+      width: 1.25rem;
+      height: 0.75rem;
+    }
+  }
+
+  .text-def {
+    font-size: 0.875rem;
+  }
+  .text-sec {
+    font-size: 0.875rem;
+  }
+
+  .btn-def {
+    padding: 1rem 1.25rem;
+    border-radius: 0.5585rem;
+    font-size: 1rem;
+    letter-spacing: -0.04rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .fffffff {
+  }
+}
