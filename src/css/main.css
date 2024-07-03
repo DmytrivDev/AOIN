@@ -1,0 +1,70 @@
+/* Settings */
+@import url('./settings/fonts.scss');
+@import url('./settings/default.scss');
+@import url('./settings/variables.scss');
+@import url('./settings/general.scss');
+
+/* Embeded*/
+@import url('./sections/embeded/embeded.scss');
+
+/* Pop-up */
+@import url('./sections/pop-up/pop-up.scss');
+
+/* Login */
+@import url('./sections/login/login.scss');
+
+/* Recovery */
+@import url('./sections/recovery/recovery.scss');
+
+/* Erorr */
+@import url('./sections/erorr-page/erorr.scss');
+
+/* Header */
+@import url('./sections/header/header.scss');
+@import url('./sections/header/navigation.scss');
+@import url('./sections/header/acc-modal.scss');
+
+/* Main */
+@import url('./sections/main/hero.scss');
+@import url('./sections/main/services.scss');
+@import url('./sections/main/about.scss');
+@import url('./sections/main/portfolio.scss');
+@import url('./sections/main/customers.scss');
+@import url('./sections/main/reviews.scss');
+
+/* Account-page */
+@import url('./sections/account-page/account.scss');
+
+/* About-page */
+@import url('./sections/about-page/about-us.scss');
+@import url('./sections/about-page/team.scss');
+@import url('./sections/about-page/employees.scss');
+@import url('./sections/about-page/platform.scss');
+
+/* Vacancies-page */
+@import url('./sections/vacancies-page/vacancies.scss');
+
+/* Portfolio-page */
+@import url('./sections/portfolio-page/portfolio-page.scss');
+
+/* Projects-page */
+@import url('./sections/projects-page/projects.scss');
+
+/* Services-page */
+@import url('./sections/services-page/services-page.scss');
+@import url('./sections/services-page/process.scss');
+
+/* Industry-page */
+@import url('./sections/industry-page/industry.scss');
+
+/* Blog-page */
+@import url('./sections/blog-page/blog.scss');
+
+/* Article-page */
+@import url('./sections/article-page/article.scss');
+
+/* Policy-page  */
+@import url('./sections/policy-page/policy.scss');
+
+/* Footer */
+@import url('./sections/footer/footer.scss');

@@ -1,0 +1,134 @@
+.article {
+	padding-top: 3.12rem;
+	padding-bottom: 6.25rem;
+	&__blog-page {
+		padding-bottom: 6.25rem;
+	}
+
+	&__body {
+	}
+	&__title {
+		margin: 3.12rem 0;
+		text-align: center;
+	}
+	&__img-wrapp {
+		position: relative;
+		height: 21.875rem;
+		margin-bottom: 3.12rem;
+	}
+	&__content {
+		max-width: 40rem;
+		margin: 0 auto;
+	}
+	&__box {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		padding-top: 1.88rem;
+		margin-top: 1.88rem;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			background-color: #91b3fa;
+			width: 100%;
+			top: 0;
+			left: 0;
+			height: 0.0625rem;
+		}
+	}
+	&__rows {
+		display: flex;
+		align-items: center;
+		gap: 1.125rem;
+	}
+	&__icon-wrapp {
+		border-radius: 50%;
+		width: 3.75rem;
+		height: 3.75rem;
+		position: relative;
+		background-color: #91b3fa;
+		img {
+			width: 1.75rem;
+			height: 1.75rem;
+			filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+				hue-rotate(93deg) brightness(103%) contrast(103%);
+		}
+	}
+	&__info {
+	}
+	&__name {
+		font-weight: 500;
+		line-height: 1.5rem;
+	}
+	&__comp {
+		color: rgba(0, 0, 40, 0.7);
+		line-height: 1.5rem;
+	}
+	&__date {
+		line-height: 1.5rem;
+	}
+	&__date-mob {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.article {
+		padding-top: 1.25rem;
+		padding-bottom: 3.12rem;
+		&__blog-page {
+			padding-bottom: 2.5rem;
+		}
+
+		&__title {
+			margin-top: 0.5rem;
+			margin-bottom: 1.25rem;
+			text-align: start;
+		}
+		&__img-wrapp {
+			padding-top: 60%;
+			height: auto;
+			margin-bottom: 1.25rem;
+		}
+		&__box {
+			padding-top: 1.25rem;
+			margin-top: 1.25rem;
+		}
+		&__rows {
+			gap: 0.75rem;
+		}
+		&__icon-wrapp {
+			width: 2.5rem;
+			height: 2.5rem;
+			img {
+				width: 1.375rem;
+				height: 1.375rem;
+			}
+		}
+		&__name {
+			line-height: 1.2rem;
+		}
+		&__comp {
+			line-height: 1.4rem;
+		}
+		&__date {
+			display: none;
+			font-size: 0.875rem;
+			line-height: 1.3125rem;
+		}
+		&__date-mob {
+			margin-top: 1.88rem;
+			color: #91b3fa;
+			display: block;
+		}
+	}
+}
+@media screen and (max-width: 680px) {
+	.article {
+	}
+}
+@media screen and (max-width: 500px) {
+	.article {
+	}
+}

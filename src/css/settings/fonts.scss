@@ -1,0 +1,35 @@
+// Gilroy
+@font-face {
+	font-display: swap;
+	font-family: "Gilroy"; 
+	font-style: normal;
+	font-weight: 400;
+	src:
+		url("../../../public/fonts/Gilroy-Regular/Gilroy-Regular.eot")
+			format("embedded-opentype"),
+		url("../../../public/fonts/Gilroy-Regular/Gilroy-Regular.ttf") format("truetype"),
+		url("../../../public/fonts/Gilroy-Regular/Gilroy-Regular.woff2") format("woff2");
+}
+@font-face {
+	font-display: swap;
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: 500;
+	src:
+		url("../../../public/fonts/Gilroy-Medium/Gilroy-Medium.eot")
+			format("embedded-opentype"),
+		url("../../../public/fonts/Gilroy-Medium/Gilroy-Medium.ttf") format("truetype"),
+		url("../../../public/fonts/Gilroy-Medium/Gilroy-Medium.woff2") format("woff2");
+}
+@font-face {
+	font-display: swap;
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: 600;
+	src:
+		url("../../../public/fonts/Gilroy-Semibold/Gilroy-Semibold.eot")
+			format("embedded-opentype"),
+		url("../../../public/fonts/Gilroy-SemiBold/Gilroy-Semibold.ttf")
+			format("truetype"),
+		url("../../../public/fonts/Gilroy-SemiBold/Gilroy-Semibold.woff2") format("woff2");
+}
