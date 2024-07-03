@@ -1,0 +1,46 @@
+.header {
+  &__body {
+    display: flex;
+    align-items: center;
+    padding: 2.75rem 0;
+  }
+  &__logo {
+    display: block;
+    width: 7.25rem;
+    margin-right: auto;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__nav {
+  }
+  &__btn {
+    display: none;
+  }
+}
+
+.burger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .header {
+    &__nav {
+      display: none;
+    }
+    &__btn {
+      display: block;
+    }
+  }
+
+  .burger-menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+  }
+}

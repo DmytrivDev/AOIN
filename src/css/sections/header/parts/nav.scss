@@ -1,0 +1,38 @@
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  &__item {
+  }
+  &__link {
+    position: relative;
+    display: block;
+    color: var(--cm);
+    font-size: 1.25rem;
+    line-height: normal;
+    transition: all 200ms ease-in;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 0.2rem;
+      border-bottom: 0.063rem solid transparent;
+      width: 20%;
+      top: 100%;
+      left: 0;
+      transition: all 200ms ease-in;
+    }
+    &:hover {
+      color: var(--cw);
+      &::after {
+        border-bottom: 0.063rem solid var(--cw);
+        width: 100%;
+      }
+    }
+  }
+}

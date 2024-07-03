@@ -7,6 +7,8 @@
 
 /* Header */
 @import url('./sections/header/header.scss');
+@import url('./sections/header/parts/burger.scss');
+@import url('./sections/header/parts/nav.scss');
 
 /* Main */
 @import url('./sections/main/hero.scss');
