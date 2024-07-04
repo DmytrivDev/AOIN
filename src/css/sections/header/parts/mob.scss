@@ -15,7 +15,7 @@
     bottom: 0;
     z-index: 10;
     transform: translateY(-100%);
-    transition: all 500ms;
+    transition: all 400ms;
     &.is-opened {
       transform: translateY(0);
     }
