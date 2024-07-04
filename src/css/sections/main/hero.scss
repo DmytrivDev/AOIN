@@ -1,0 +1,95 @@
+.hero {
+  padding: 10.5rem 0 17.7rem 0;
+
+  &__body {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+  &__content {
+    width: 40.375rem;
+  }
+  &__title {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 5.6875rem;
+    letter-spacing: -0.15631rem;
+    background: var(--lg1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.25rem;
+  }
+  &__text {
+    margin-bottom: 3.12rem;
+  }
+  &__btn {
+  }
+  &__wrapp {
+    position: relative;
+    width: 34.875rem;
+    height: 24.125rem;
+    border-radius: 0.625rem;
+    background-color: var(--rg1);
+  }
+  &__img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40.5625rem;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .hero {
+    padding: 7.44rem 0 5.25rem 0;
+
+    &__body {
+      gap: 2rem;
+    }
+    &__content {
+      width: 100%;
+    }
+    &__title {
+      font-size: 2.5rem;
+      line-height: 3.125rem;
+      width: 18.625rem;
+    }
+    &__text {
+      margin-bottom: 1.5rem;
+    }
+    &__wrapp {
+      flex-shrink: 0;
+      width: 21.125rem;
+      height: 14.61rem;
+      border-radius: 0.37856rem;
+    }
+    &__img {
+      width: 24.57013rem;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .hero {
+    padding: 4.44rem 0 5.25rem 0;
+
+    &__body {
+      flex-direction: column;
+      justify-content: start;
+      gap: 5rem;
+    }
+    &__title {
+      width: 100%;
+    }
+    &__wrapp {
+      width: 100%;
+    }
+  }
+}

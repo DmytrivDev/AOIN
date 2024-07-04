@@ -34,13 +34,15 @@
 
 .text-def {
   font-size: 1.25rem;
-  line-height: normal;
+  line-height: 1.75rem;
 }
 .text-sec {
   line-height: normal;
 }
 
 .btn-def {
+  position: relative;
+  z-index: 1;
   width: fit-content;
   display: flex;
   justify-content: center;
@@ -52,11 +54,25 @@
   font-weight: 700;
   background-color: var(--cb2);
   line-height: normal;
+  overflow: hidden;
   transition: all 200ms ease-in;
-  &:hover,
-  &:focus {
-    background-color: var(--cm1);
-    color: var(--cb2);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: var(--lg1);
+    z-index: -1;
+    transition: all 200ms ease-in;
+  }
+  &:hover::before {
+    width: 100%;
+  }
+  &:hover {
+    text-shadow: var(--bs1);
   }
 }
 
