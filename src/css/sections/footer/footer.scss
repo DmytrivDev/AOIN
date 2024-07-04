@@ -53,15 +53,14 @@
     justify-content: center;
     align-items: center;
     width: 2.9375rem;
-    transition: all 500ms ease-in;
-    img {
+    svg {
       display: block;
       max-width: 100%;
-      height: auto;
+      fill: var(--cm2);
+      transition: all 200ms ease-in;
     }
-    &:hover {
-      filter: invert(56%) sepia(95%) saturate(2403%) hue-rotate(160deg)
-        brightness(94%) contrast(103%);
+    &:hover svg {
+      fill: var(--cb2);
     }
   }
   &__rights {
