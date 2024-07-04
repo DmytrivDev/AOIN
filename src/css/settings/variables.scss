@@ -1,9 +1,19 @@
 body {
   /* Colors */
-  --cm: #fff;
-  --cq: #09111e;
-  --cw: #00adee;
+  --cm1: #fff;
+
+  --cb1: #09111e;
+  --cb2: #00adee;
+
+  --cd1: #eaecf0;
 
   /* Fonts */
   --ffm: "Inter", sans-serif;
+}
+
+@media screen and (max-width: 960px) {
+  body {
+    /* Colors */
+    --cb1: #09121f;
+  }
 }

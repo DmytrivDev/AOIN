@@ -1,8 +1,14 @@
 .header {
+  position: relative;
+  &__top {
+    padding: 2.75rem 0;
+    position: relative;
+    z-index: 15;
+    background-color: var(--cb1);
+  }
   &__body {
     display: flex;
     align-items: center;
-    padding: 2.75rem 0;
   }
   &__logo {
     display: block;
@@ -27,16 +33,67 @@
 
 @media screen and (max-width: 960px) {
   .header {
+    &__top {
+      padding: 1rem 0;
+      border-bottom: 0.063rem solid var(--cd1);
+    }
+    &__logo {
+      width: 4.625rem;
+    }
     &__nav {
       display: none;
     }
     &__btn {
       display: block;
+      padding: 0.625rem 1rem;
+      font-size: 0.75rem;
+      margin-right: 1.5rem;
+      &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+      }
     }
   }
 
   .burger-menu {
-    display: block;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.625rem;
+    height: 1rem;
+    transition: all 200ms ease-in;
+    span {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 100%;
+      height: 0.156rem;
+      border-radius: 0.625rem;
+      background-color: var(--cm1);
+      transform: translateX(-50%) translateY(-50%) rotate(0);
+      transition: all 200ms ease-in;
+      &:first-child {
+        top: 0;
+      }
+      &:last-child {
+        top: 100%;
+      }
+    }
+    &.is-opened {
+      span {
+        top: 50%;
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(1) {
+          transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        }
+        &:nth-child(3) {
+          transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+        }
+      }
+    }
   }
 }
 

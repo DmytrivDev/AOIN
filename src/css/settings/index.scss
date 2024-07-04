@@ -14,7 +14,7 @@
   line-height: 4.5rem;
 }
 .dec-subtitle {
-  color: var(--cw);
+  color: var(--cb2);
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.5rem;
@@ -47,16 +47,16 @@
   align-items: center;
   padding: 1.0625rem 2.5rem;
   border-radius: 0.367rem;
-  color: var(--cm);
+  color: var(--cm1);
   font-size: 1.27rem;
   font-weight: 700;
-  background-color: var(--cw);
+  background-color: var(--cb2);
   line-height: normal;
   transition: all 200ms ease-in;
   &:hover,
   &:focus {
-    background-color: var(--cm);
-    color: var(--cw);
+    background-color: var(--cm1);
+    color: var(--cb2);
   }
 }
 
@@ -65,7 +65,7 @@
     font-size: 2rem;
   }
   .dec-subtitle {
-    color: var(--cw);
+    color: var(--cb2);
     font-size: 1rem;
     font-weight: 600;
     gap: 0.6rem;

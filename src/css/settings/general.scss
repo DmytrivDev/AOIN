@@ -1,59 +1,64 @@
 html,
 body {
-  font-family: var(--ffm);
-  color: var(--cm);
-  font-size: 1rem;
-  line-height: 1.75;
-  background-color: var(--cq);
+	font-family: var(--ffm);
+	color: var(--cm1);
+	font-size: 1rem;
+	line-height: 1.75;
+	background-color: var(--cb1);
+}
+body {
+	&.overhide {
+		overflow: hidden;
+	}
 }
 
 .overhide {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 .wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
 }
 
 .container {
-  max-width: 84.375em;
-  padding: 0 1.5em;
-  margin: 0 auto;
+	max-width: 84.375em;
+	padding: 0 1.5em;
+	margin: 0 auto;
 }
 
 @media screen and (max-width: 1350px) {
-  html,
-  body {
-    font-size: 1.19vw;
-  }
+	html,
+	body {
+		font-size: 1.19vw;
+	}
 }
 
 @media screen and (max-width: 960px) {
-  html,
-  body {
-    font-size: 16px;
-  }
-  .container {
-    padding: 0 1.25em;
-  }
+	html,
+	body {
+		font-size: 16px;
+	}
+	.container {
+		padding: 0 1.25em;
+	}
 }
 
 @media screen and (max-width: 500px) {
-  html,
-  body {
-    font-size: 16px;
-  }
-  .container {
-    padding: 0 1.25em;
-  }
+	html,
+	body {
+		font-size: 16px;
+	}
+	.container {
+		padding: 0 1.25em;
+	}
 }
 
 @media screen and (max-width: 375px) {
-  html,
-  body {
-    font-size: 4.1vw;
-  }
+	html,
+	body {
+		font-size: 4.1vw;
+	}
 }

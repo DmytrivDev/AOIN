@@ -1,38 +1,81 @@
-.nav-menu {
-  display: flex;
-  align-items: center;
-  gap: 2.5rem;
-  &__list {
+.header__nav {
+  .nav-menu {
     display: flex;
     align-items: center;
-    gap: 3rem;
-  }
-  &__item {
-  }
-  &__link {
-    position: relative;
-    display: block;
-    color: var(--cm);
-    font-size: 1.25rem;
-    line-height: normal;
-    transition: all 200ms ease-in;
-
-    &::after {
-      content: "";
-      position: absolute;
-      height: 0.2rem;
-      border-bottom: 0.063rem solid transparent;
-      width: 20%;
-      top: 100%;
-      left: 0;
-      transition: all 200ms ease-in;
+    gap: 2.5rem;
+    &__list {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
     }
-    &:hover {
-      color: var(--cw);
+    &__item {
+    }
+    &__link {
+      position: relative;
+      display: block;
+      color: var(--cm1);
+      font-size: 1.25rem;
+      line-height: normal;
+      transition: all 200ms ease-in;
+
       &::after {
-        border-bottom: 0.063rem solid var(--cw);
-        width: 100%;
+        content: "";
+        position: absolute;
+        height: 0.2rem;
+        border-bottom: 0.063rem solid transparent;
+        width: 20%;
+        top: 100%;
+        left: 0;
+        transition: all 200ms ease-in;
       }
+      &:hover {
+        color: var(--cb2);
+        &::after {
+          border-bottom: 0.063rem solid var(--cb2);
+          width: 100%;
+        }
+      }
+    }
+    &__btn {
+    }
+  }
+}
+
+.mob-menu__nav {
+  .nav-menu {
+    padding: 3.5625rem 1.25rem;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      margin-bottom: 4.05rem;
+    }
+    &__item {
+      &:last-child {
+        .nav-menu__link {
+          border-bottom: none;
+        }
+      }
+    }
+    &__link {
+      display: block;
+      width: 100%;
+      color: var(--cm1);
+      font-size: 1.25rem;
+      font-weight: 600;
+      line-height: 1.5rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 0.063rem solid var(--cd1);
+      transition: all 200ms ease-in;
+      &:hover {
+        color: var(--cb2);
+        border-color: var(--cb2);
+      }
+    }
+    &__btn {
+      padding: 0.625rem 1rem;
+      font-size: 0.75rem;
     }
   }
 }
