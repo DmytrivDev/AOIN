@@ -1,0 +1,144 @@
+.behistory {
+  position: relative;
+  padding: 7.06rem 0 11.3rem 0;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__year {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 48.8125rem;
+    img {
+      display: block;
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6.44rem;
+    max-width: 57.375rem;
+  }
+  &__subtitle {
+    margin-bottom: 1rem;
+  }
+  &__title {
+    margin-bottom: 1.25rem;
+  }
+  &__text {
+    text-align: center;
+  }
+
+  &__graph {
+    display: flex;
+    align-items: center;
+    gap: 1.38rem;
+    margin-bottom: 6.44rem;
+
+    .graph-icon {
+      width: 3.75rem;
+      height: 3.75rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+    .graph-vector {
+      width: 9.4375rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: start;
+    gap: 3.44rem;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 13.5rem;
+
+    .graph-icon,
+    .graph-vector {
+      display: none;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__slogan {
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 2.5rem;
+  }
+  &__desc {
+    color: var(--cm3);
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1.6875rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .behistory {
+    padding: 4.06rem 0 9.3rem 0;
+
+    &__info {
+      margin-bottom: 6.56rem;
+      max-width: 35rem;
+    }
+    &__year {
+      width: 23.5rem;
+    }
+    &__graph {
+      display: none;
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      gap: 6.44rem;
+    }
+    &__item {
+      gap: 1.25rem;
+
+      .graph-icon,
+      .graph-vector {
+        display: flex;
+      }
+      .graph-vector {
+        width: 0.5625rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .behistory {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
