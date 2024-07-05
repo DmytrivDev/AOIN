@@ -1,7 +1,7 @@
 .questions {
-  padding: 6.06rem 0;
-
   &__body {
+    position: relative;
+    padding: 6.06rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,12 +13,26 @@
   }
   &__btn {
   }
+
+  .planet-decor-line {
+    position: absolute;
+    z-index: -1;
+    bottom: 1.5rem;
+    right: -3rem;
+    width: 32.87631rem;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 @media screen and (max-width: 960px) {
   .questions {
-    padding: 3rem 0 3.5rem 0;
-
+    &__body {
+      padding: 3rem 0 3.5rem 0;
+    }
     &__title {
       font-size: 1.5rem;
       margin-bottom: 1.8rem;
@@ -26,6 +40,10 @@
     &__btn {
       padding: 0.625rem 1rem;
       font-size: 0.75rem;
+    }
+
+    .planet-decor-line {
+      display: none;
     }
   }
 }

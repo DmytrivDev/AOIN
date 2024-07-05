@@ -1,7 +1,7 @@
 .hero {
-  padding: 10.5rem 0 17.7rem 0;
-
   &__body {
+    padding: 10.5rem 0 17.7rem 0;
+    position: relative;
     display: flex;
     align-items: start;
     justify-content: space-between;
@@ -44,13 +44,66 @@
       height: auto;
     }
   }
+
+  .eff-filter-dec {
+    position: absolute;
+    z-index: -1;
+    bottom: -8.6rem;
+    right: -10.2rem;
+    width: 15.5rem;
+    height: 14.3125rem;
+    border-radius: 50%;
+    background-color: var(--rg2);
+    filter: blur(4.688rem);
+  }
+  .eff-filter-mob {
+    display: none;
+  }
+
+  .planet-decor-max {
+    position: absolute;
+    z-index: -1;
+    bottom: 8.6rem;
+    right: 33rem;
+    width: 5.875rem;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .planet-decor-min {
+    position: absolute;
+    z-index: -1;
+    bottom: 4.35rem;
+    left: -0.62rem;
+    width: 2.5rem;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .line-eff-dec {
+    position: absolute;
+    z-index: -1;
+    bottom: 4rem;
+    left: -7rem;
+    transform: rotate(-8.55deg);
+    img {
+      display: block;
+    }
+  }
+  .line-eff-mob {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 960px) {
   .hero {
-    padding: 7.44rem 0 5.25rem 0;
-
     &__body {
+      padding: 4.44rem 0 5.25rem 0;
       gap: 2rem;
     }
     &__content {
@@ -73,13 +126,57 @@
     &__img {
       width: 24.57013rem;
     }
+
+    .eff-filter-dec {
+      bottom: -2.17rem;
+      right: -5.7rem;
+      width: 12.5rem;
+      height: 11.54231rem;
+      background-color: var(--rg3);
+      opacity: 0.6;
+      filter: blur(3.78rem);
+    }
+    .eff-filter-mob {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: -17.25rem;
+      left: -11rem;
+      width: 29.125rem;
+      height: 29.125rem;
+      background: var(--lg2);
+      border-radius: 50%;
+      filter: blur(11rem);
+    }
+
+    .planet-decor-max {
+      bottom: 0.75rem;
+      right: 2.56rem;
+      width: 2.5rem;
+    }
+    .planet-decor-min {
+      display: none;
+    }
+
+    .line-eff-dec {
+      bottom: 3.6rem;
+      left: -7.88rem;
+      width: 43.68894rem;
+      height: 14.96388rem;
+      transform: rotate(-33.091deg);
+    }
+
+    .line-eff-dec {
+      display: none;
+    }
+    .line-eff-mob {
+      display: none;
+    }
   }
 }
 
 @media screen and (max-width: 760px) {
   .hero {
-    padding: 4.44rem 0 5.25rem 0;
-
     &__body {
       flex-direction: column;
       justify-content: start;

@@ -1,7 +1,7 @@
 .community {
-  padding: 10.6rem 0 9.1rem 0;
-
   &__body {
+    padding: 10.6rem 0 9.1rem 0;
+    position: relative;
   }
 
   &__content {
@@ -88,12 +88,38 @@
       height: auto;
     }
   }
+
+  .eff-filter-dec {
+    position: absolute;
+    z-index: -1;
+    bottom: -5.4rem;
+    right: -11.8rem;
+    width: 15.5rem;
+    height: 14.3125rem;
+    border-radius: 50%;
+    background-color: var(--rg2);
+    filter: blur(4.688rem);
+  }
+
+  .planet-decor-max {
+    position: absolute;
+    z-index: -1;
+    bottom: 3.77rem;
+    right: 28.8rem;
+    width: 5.875rem;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 @media screen and (max-width: 960px) {
   .community {
-    padding: 3.06rem 0 6.8rem 0;
-
+    &__body {
+      padding: 3.06rem 0 6.8rem 0;
+    }
     &__content {
       flex-direction: column;
       align-items: center;
@@ -145,6 +171,14 @@
     &__img {
       width: 100%;
       max-width: 30rem;
+    }
+
+    .eff-filter-dec {
+      display: none;
+    }
+
+    .planet-decor-max {
+      display: none;
     }
   }
 }
