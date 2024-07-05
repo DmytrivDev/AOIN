@@ -1,0 +1,64 @@
+.cryptvs {
+  padding: 5.88rem 0;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__content {
+    display: flex;
+    align-items: start;
+    gap: 7rem;
+  }
+  &__info {
+  }
+  &__subtitle {
+  }
+  &__title {
+  }
+  &__text {
+  }
+  &__img {
+    width: 78.25rem;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .cryptvs {
+    padding: 4.25rem 0;
+
+    &__content {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      max-width: 30rem;
+      margin-bottom: 3.63rem;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__title {
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    &__text {
+      text-align: center;
+    }
+    &__img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cryptvs {
+  }
+}
