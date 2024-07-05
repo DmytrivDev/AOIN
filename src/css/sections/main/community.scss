@@ -1,0 +1,158 @@
+.community {
+  padding: 10.6rem 0 9.1rem 0;
+
+  &__body {
+  }
+
+  &__content {
+    display: flex;
+    align-items: start;
+    gap: 24.6875rem;
+    margin-bottom: 4.88rem;
+  }
+
+  &__info {
+  }
+  &__subtitle {
+  }
+  &__title {
+  }
+  &__text {
+  }
+
+  &__wrapp {
+    display: flex;
+    align-items: center;
+    gap: 7.94rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.56rem;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.93rem 2.34rem;
+    border-radius: 0.95413rem;
+    border: 0.063rem solid var(--cb2);
+    background-color: var(--cb1);
+    overflow: hidden;
+    transition: all 200ms ease-in;
+    &:hover {
+      transform: scale(1.01);
+      -webkit-box-shadow: var(--bs2);
+      -moz-box-shadow: var(--bs2);
+      box-shadow: var(--bs2);
+    }
+  }
+  &__icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.39619rem;
+    margin-bottom: 3.3rem;
+    img {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  &__slogan {
+    width: 100%;
+    text-align: center;
+    font-size: 1.79713rem;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.02744rem solid var(--cb2);
+  }
+  &__desc {
+    margin-top: 0.6rem;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.54rem;
+  }
+
+  &__img {
+    width: 36.53769rem;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .community {
+    padding: 3.06rem 0 6.8rem 0;
+
+    &__content {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      margin-bottom: 4.44rem;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__title {
+      margin-bottom: 1rem;
+    }
+    &__text {
+      text-align: center;
+      max-width: 25rem;
+    }
+
+    &__wrapp {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    &__list {
+      gap: 1.25rem;
+      margin-bottom: 4.44rem;
+    }
+    &__item {
+      padding: 3.05rem 2.44rem;
+      border-radius: 0.99544rem;
+      &:hover {
+        transform: none;
+        box-shadow: none;
+      }
+    }
+    &__icon {
+      width: 2.5rem;
+      margin-bottom: 3.5rem;
+    }
+    &__slogan {
+      font-size: 1.875rem;
+    }
+    &__desc {
+      margin-top: 0.62rem;
+    }
+
+    &__img {
+      width: 100%;
+      max-width: 30rem;
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .community {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
