@@ -16,6 +16,7 @@
 @import url('./sections/main/community.scss');
 @import url('./sections/main/utility.scss');
 @import url('./sections/main/cryptvs.scss');
+@import url('./sections/main/questions.scss');
 
 /* Footer */
 @import url('./sections/footer/footer.scss');

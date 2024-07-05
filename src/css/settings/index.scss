@@ -11,7 +11,7 @@
 .title-def {
   font-size: 3.75rem;
   font-weight: 700;
-  line-height: normal;
+  line-height: 4.5rem;
 }
 .dec-subtitle {
   color: var(--cb2);
@@ -79,6 +79,7 @@
 @media screen and (max-width: 960px) {
   .title-def {
     font-size: 2rem;
+    line-height: normal;
   }
   .dec-subtitle {
     color: var(--cb2);
