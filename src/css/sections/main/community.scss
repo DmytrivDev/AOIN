@@ -1,9 +1,9 @@
 .community {
+  padding: 10.6rem 0 9.1rem 0;
+
   &__body {
-    padding: 10.6rem 0 9.1rem 0;
     position: relative;
   }
-
   &__content {
     display: flex;
     align-items: start;
@@ -92,7 +92,7 @@
   .eff-filter-dec {
     position: absolute;
     z-index: -1;
-    bottom: -5.4rem;
+    bottom: -15.4rem;
     right: -11.8rem;
     width: 15.5rem;
     height: 14.3125rem;
@@ -104,7 +104,7 @@
   .planet-decor-max {
     position: absolute;
     z-index: -1;
-    bottom: 3.77rem;
+    bottom: -5.5rem;
     right: 28.8rem;
     width: 5.875rem;
     img {
@@ -117,9 +117,8 @@
 
 @media screen and (max-width: 960px) {
   .community {
-    &__body {
-      padding: 3.06rem 0 6.8rem 0;
-    }
+    padding: 3.06rem 0 6.8rem 0;
+
     &__content {
       flex-direction: column;
       align-items: center;

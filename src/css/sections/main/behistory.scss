@@ -2,6 +2,7 @@
   padding: 7.06rem 0 11.3rem 0;
 
   &__body {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,6 +100,20 @@
     font-size: 0.875rem;
     line-height: 1.6875rem;
   }
+
+  .line-eff-dec {
+    position: absolute;
+    z-index: -1;
+    bottom: -17.7rem;
+    left: -13.53rem;
+    width: 114.22394rem;
+    transform: rotate(-9.487deg);
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -112,6 +127,7 @@
       max-width: 35rem;
     }
     &__year {
+      top: -4.6rem;
       width: 23.5rem;
     }
     &__graph {
@@ -133,6 +149,13 @@
       .graph-vector {
         width: 0.5625rem;
       }
+    }
+
+    .line-eff-dec {
+      bottom: -14rem;
+      left: 50%;
+      width: 48.4635rem;
+      transform: translateX(-50%) rotate(-33.091deg);
     }
   }
 }

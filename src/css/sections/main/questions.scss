@@ -1,12 +1,16 @@
 .questions {
+  padding: 6.06rem 0;
+
   &__body {
     position: relative;
-    padding: 6.06rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 2.5rem;
   }
   &__subtitle {
@@ -19,9 +23,23 @@
   .planet-decor-line {
     position: absolute;
     z-index: -1;
-    bottom: 1.5rem;
+    bottom: -4.5rem;
     right: -3rem;
     width: 32.87631rem;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .line-eff-dec {
+    position: absolute;
+    z-index: -1;
+    bottom: 0.5rem;
+    left: -13.2rem;
+    width: 114.26263rem;
+    transform: rotate(-9.638deg);
     img {
       display: block;
       width: 100%;
@@ -32,9 +50,8 @@
 
 @media screen and (max-width: 960px) {
   .questions {
-    &__body {
-      padding: 3rem 0 3.5rem 0;
-    }
+    padding: 3rem 0 3.5rem 0;
+
     &__info {
       margin-bottom: 1.8rem;
     }
@@ -48,6 +65,12 @@
 
     .planet-decor-line {
       display: none;
+    }
+
+    .line-eff-dec {
+      left: 50%;
+      width: 40rem;
+      transform: translateX(-50%) rotate(-24deg);
     }
   }
 }
