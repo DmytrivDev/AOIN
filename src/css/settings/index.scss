@@ -1,10 +1,29 @@
-@media screen and (max-width: 960px) {
-  .fffffff {
+.planet-animation-max {
+  animation: planetMovement 2.5s ease-in-out infinite alternate;
+  animation-delay: 1s;
+}
+.planet-animation-min {
+  animation: planetMovement 2.5s ease-in-out infinite alternate;
+  animation-delay: 3s;
+}
+@keyframes planetMovement {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0.7rem);
   }
 }
 
-@media screen and (max-width: 500px) {
-  .fffffff {
+.line-animation {
+  animation: lineMovement 4s ease-in-out infinite alternate;
+}
+@keyframes lineMovement {
+  0% {
+    transform: skew(0, 0);
+  }
+  100% {
+    transform: skew(-11deg, -1deg);
   }
 }
 
@@ -132,10 +151,5 @@
     border-radius: 0.5585rem;
     font-size: 1rem;
     letter-spacing: -0.04rem;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .fffffff {
   }
 }
