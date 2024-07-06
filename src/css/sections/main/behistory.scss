@@ -1,5 +1,4 @@
 .behistory {
-  position: relative;
   padding: 7.06rem 0 11.3rem 0;
 
   &__body {
@@ -7,10 +6,13 @@
     flex-direction: column;
     align-items: center;
   }
+  &__box {
+    margin-bottom: 6.44rem;
+  }
   &__year {
     position: absolute;
     z-index: -1;
-    top: 0;
+    top: -7.06rem;
     left: 50%;
     transform: translateX(-50%);
     width: 48.8125rem;
@@ -25,7 +27,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 6.44rem;
     max-width: 57.375rem;
   }
   &__subtitle {
@@ -104,8 +105,10 @@
   .behistory {
     padding: 4.06rem 0 9.3rem 0;
 
-    &__info {
+    &__box {
       margin-bottom: 6.56rem;
+    }
+    &__info {
       max-width: 35rem;
     }
     &__year {
