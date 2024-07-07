@@ -115,15 +115,12 @@
     height: 100%;
     width: 0;
     background-color: var(--rg4);
-    background-image: var(--lg3);
+    background-image: var(--lg3); 
     z-index: -1;
     transition: all 200ms ease-in;
   }
   &:hover::before {
     width: 100%;
-  }
-  &:hover {
-    text-shadow: var(--bs1);
   }
 }
 
