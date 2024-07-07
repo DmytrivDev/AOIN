@@ -13,6 +13,7 @@ body {
   --rg1: rgba(0, 173, 238, 0.08);
   --rg2: rgba(22, 164, 217, 0.2);
   --rg3: rgba(22, 164, 217, 0.15);
+  --rg4: rgba(146, 192, 204, 1);
 
   --lg1: linear-gradient(90deg, #fff 0%, #00adee 70%);
   --lg2: linear-gradient(
@@ -20,8 +21,13 @@ body {
     rgba(141, 141, 236, 0.17) 45.74%,
     rgba(84, 84, 212, 0) 86.05%
   );
+  --lg3: linear-gradient(
+    90deg,
+    rgba(146, 192, 204, 1) 0%,
+    rgba(0, 109, 148, 1) 47%
+  );
 
-  --bs1: 0.25rem 0.125rem 0.188rem rgba(66, 68, 90, 1);
+  --bs1: 0.125rem 0 0.313rem rgba(66, 68, 90, 1);
   --bs2: 0 0.5rem 1.438rem -0.188rem rgba(0, 173, 238, 1);
 
   /* Fonts */

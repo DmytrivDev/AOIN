@@ -20,10 +20,15 @@
 }
 @keyframes lineMovement {
   0% {
-    transform: skew(0, 0);
+    // transform: skew(0, 0);
+    // transform: none;
+    // transform: scale(1.1) translate(-17px, 0px) skew(6deg, 10deg);
+    transform: scale(1.1) rotate(4deg) translate(0, 0) skew(19deg, 3deg);
   }
   100% {
-    transform: skew(-11deg, -1deg);
+    // transform: skew(-11deg, -1deg);
+    // transform: scale(1.1) rotate(3deg) translate(9px, 0px) skew(-34deg, 0deg);
+    transform: scale(1.1) rotate(15deg) translate(-18px, 0) skew(-21deg, -5deg);
   }
 }
 
@@ -109,7 +114,8 @@
     left: 0;
     height: 100%;
     width: 0;
-    background: var(--lg1);
+    background-color: var(--rg4);
+    background-image: var(--lg3);
     z-index: -1;
     transition: all 200ms ease-in;
   }
