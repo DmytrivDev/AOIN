@@ -18,7 +18,7 @@
     "webpack": "^5.90.0",
     "webpack-cli": "^5.1.4"
   },
-  "author": "Andrii Dmytriv",
+  "author": "Vladyslav Halchenko",
   "license": "ISC",
   "dependencies": {
     "@splidejs/splide": "^4.1.4",
