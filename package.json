@@ -1,11 +1,11 @@
 {
-  "name": "AION",
+  "name": "AOIN",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/AION/",
+    "build": "vite build --base=/AOIN/",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -18,7 +18,7 @@
     "webpack": "^5.90.0",
     "webpack-cli": "^5.1.4"
   },
-  "author": "Vladyslav Halchenko",
+  "author": "Andrii Dmytriv",
   "license": "ISC",
   "dependencies": {
     "@splidejs/splide": "^4.1.4",
