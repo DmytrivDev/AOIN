@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/AION",
+    "build": "vite build --base=/AION/",
     "preview": "vite preview"
   },
   "devDependencies": {
